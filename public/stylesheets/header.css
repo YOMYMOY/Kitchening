@@ -23,7 +23,7 @@
 
 .header__nav--menu li {
     width: 100%;
-    background-color: grey;
+    background-color: var(--colorGris);
     text-transform: uppercase;
     margin-bottom: 2px;
     text-align: center;
