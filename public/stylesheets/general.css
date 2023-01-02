@@ -23,3 +23,9 @@ li {
 ol, ul {
     padding: 0;
 }
+
+@media (min-width: 1280px) {
+    body {
+        padding: 0;
+    }
+}

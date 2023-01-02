@@ -6,7 +6,7 @@
 
 }
 
-.home__main__section--banner {
+.home__main__section--banner img {
     display: none;
 }
 
@@ -53,4 +53,38 @@
     margin: 20px 0;
     background-color: var(--colorGris);
     padding: 8px;
+}
+
+@media (min-width: 426px) {
+    .home__main__section--banner img {
+        display: block;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .home__main__section__article {
+        display: inline-block;
+        width: 48%;
+        margin-right: 3.2%;
+    }
+
+    .home__main__section__article:nth-child(even) {
+        margin-right: 0;
+    }
+}
+
+@media (min-width: 1280px) {
+    .home__main__section__article {
+        display: inline-block;
+        width: 380px;
+        margin-right: 14px;
+    }
+
+    .home__main__section__article:nth-child(even) {
+        margin-right: 14px;
+    }
+
+    .home__main__section__article:nth-child(3n) {
+        margin-right: 0;
+    }
 }
