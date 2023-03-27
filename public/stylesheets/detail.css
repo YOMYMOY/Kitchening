@@ -1,0 +1,50 @@
+.main__detail {
+    /* width: 50%; */
+}
+
+.detail {
+    display: grid;
+    /* grid-template-columns: 1fr 1fr; */
+}
+
+.detail__imgs {
+
+}
+
+.detail__imgs--imgPrincipal {
+
+}
+
+.detail__imgs--imgPrincipal img {
+    width: 100%;
+}
+
+.detail__imgs--imgsSecundarias {
+
+}
+
+.detail__body {
+
+}
+
+.detail__body--title {
+
+}
+
+.detail__body--price {
+
+}
+
+.detail__body--description {
+
+}
+
+.detail__body--imgChef {
+    
+}
+
+.detail__body--imgChef img {
+    width: 50%;
+    height: max-content;
+    object-fit: cover;
+}

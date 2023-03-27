@@ -1,0 +1,26 @@
+<div class="cardCourse"><a href="/courses/<%= id %>">
+    <div class="cardCourse__imgCourse">
+        <img src="/images/courses/<%= images[0] ? images[0] : 'default-course.jpg' %>" alt="">
+    </div>
+    <div class="cardCourse__imgChef">
+        <img src="/images/chefs/<%= imageChef ? imageChef : 'default-user.jpg' %>" alt="">
+    </div>
+    <div class="cardCourse__data">
+        <div class="cardCourse__data--chef">
+            <h5>Profesor</h5>
+            <h4><%= chef %></h4>
+        </div>
+        <div class="cardCourse__data--course">
+            <h4><%= title %></h4>
+        </div>
+        <div class="cardCourse__data--price">
+            <% if (discount > 0) { %>
+                <h4 class="cardCourse__data--price-total">$<%= price %></h4>
+                <h4 class="cardCourse__data--price-offer">$<%= price - 100*discount %></h4>
+            <% } else { %>
+                <h4 class="cardCourse__data--price-offer">$<%= price - 100*discount %></h4>
+            <% } %>
+            
+        </div>
+    </div></a>
+</div>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- head -->
+<%- include('../partials/head') %>
+
+<body>
+    <!-- header -->
+    <%- include('../partials/header') %>
+    <main class="main__formChef">
+        <form action="" method="POST" class="formChef__container" enctype="multipart/form-data">
+            <div class="formChef__form-group">
+                <label for="file-input">
+                    <img src="/images/chefs/default-user.jpg">
+                </label>
+                <input id="file-input" type="file" name="image"/>
+            </div>
+            <div class="formChef__container-text">
+                <h2>Ingresar el nombre del chef o profesional</h2>
+                <p>Se añadirá a la base de datos</p>
+                <input type="text" placeholder="" name="name">
+                <button type="submit">Ingresar chef</button>
+                <span>Click en la imagen para agregar foto</span>
+            </div>
+        </form>
+    </main>
+    <!-- footer -->
+    <%- include('../partials/footer') %>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- head -->
+    <%- include('../partials/head') %>
+    <body>
+        <!-- header -->
+        <%- include('../partials/header') %>
+        <main class="main__detail">
+            <div class="detail">
+                <div class="detail__imgs">
+                    <div class="detail__imgs--imgPrincipal">
+                        <img src="/images/courses/<%= images ? images[0] : 'default-course' %>" alt="">
+                    </div>
+                    <div class="detail__imgs--imgsSecundarias">
+                        Las otras imagenes
+                    </div>
+                </div>
+                <div class="detail__body">
+                    <div class="detail__body--title">
+                        <h1><%= title %></h1>
+                    </div>
+                    <div class="detail__body--price">
+                        <% if (discount > 0) { %>
+                            <h4 class="cardCourse__data--price-total">$<%= price %></h4>
+                            <h4 class="cardCourse__data--price-offer">$<%= price - 100*discount %></h4>
+                        <% } else { %>
+                            <h4 class="cardCourse__data--price-offer">$<%= price - 100*discount %></h4>
+                        <% } %>
+                    </div>
+                    <div class="detail__body--description">
+                        <p>Description</p>
+                    </div>
+                    <div class="detail__body--imgChef">
+                        <img src="/images/chefs/<%= imageChef ? imageChef : 'default-user.jpg' %>" alt="">
+                    </div>
+                </div>
+            </div>            
+        </main>
+        <!-- footer -->
+        <%- include('../partials/footer') %>
+    </body>
+</html>

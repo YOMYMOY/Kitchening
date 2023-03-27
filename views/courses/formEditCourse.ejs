@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- head -->
+<%- include('../partials/head') %>
+
+<body>
+    <!-- header -->
+    <%- include('../partials/header') %>
+    <main class="main__formChef">
+        <form action="?_method=PUT" method="POST" class="formChef__container" enctype="multipart/form-data">
+            <div class="formChef__form-group">
+                <label for="file-input">
+                    <img src="/images/courses/default-course.jpg" name="image">
+                </label>
+                <input id="file-input" type="file"/>
+            </div>
+            <div class="formChef__container-text">
+                <h2>Añadir curso</h2>
+                <p>Se añadirá a la base de datos</p>
+                <input type="text" placeholder="Nombre del curso" name="title">
+                <input type="number" placeholder="Precio en ARS" name="price">
+                <input type="number" placeholder="Descuento" name="discount">
+                <textarea name="description" cols="30" rows="10" placeholder="Descripción del curso"></textarea>
+            </div>
+            <div class="formChef__container-text">
+                <select name="chef" id="">
+                    <option value="">Seleccione chef</option>
+                </select>
+                <fieldset>
+                    <div>
+                        <input type="radio" name="section" id="newest" value="newest" checked>
+                        <label for="newest">Nuevo</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="section" id="in-sale" value="in-sale">
+                        <label for="in-sale">Oferta</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="section" id="free" value="free">
+                        <label for="free">Gratis</label>
+                    </div>
+                </fieldset>
+            </div>
+            <div class="formChef__container-text">
+                <div>
+                    <label for="visible" class="formChef__container__switch">
+                        <input id="visible" type="checkbox" class="formChef__container__switch-input" name="visible">
+                        <span class="formChef__container__switch-track">
+                            <span class="formChef__container__switch-indicator">
+                                <span class="formChef__container__switch-checkMark">
+                                    <svg viewBox="0 0 24 24" id="ghq-svg-check" role="presentation" aria-hidden="true">
+                                        <path d="M9.86 18a1 1 0 01-.73-.32l-4.86-5.17a1.001 1.001 0 011.46-1.37l4.12 4.39 8.41-9.2a1 1 0 111.48 1.34l-9.14 10a1 1 0 01-.73.33h-.01z"></path>
+                                    </svg>
+                                </span>
+                            </span>
+                        </span>
+                        Visible para el usuario
+                    </label>
+                </div>
+                <button type="submit">Añadir</button>
+                <span>Click en la imagen para agregar foto</span>
+            </div>
+        </form>
+    </main>
+    <!-- footer -->
+    <%- include('../partials/footer') %>
+</body>
+
+</html>

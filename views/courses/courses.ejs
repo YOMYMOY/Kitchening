@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- head -->
+    <%- include('../partials/head') %>
+    <body>
+        <!-- header -->
+        <%- include('../partials/header') %>
+        <main class="main__courses">
+            <div class="courses__intro">
+                <div class="courses__title">
+                    <h1>cursos</h1>
+                    <div></div>
+                </div>
+                <div class="courses__btn">
+                    <nav>
+                        <ul>
+                            <li><a href="/courses/chef/add">Agregar chef</a></li>
+                            <li><a href="/courses/add">Agregar curso</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="courses__header">
+                    <div class="courses__header__order-options">
+                        <select name="" id="">
+                            <option value="">Orden predeterminado</option>
+                            <option value="">Últimos agregados</option>
+                            <option value="">Precio: menor a mayor</option>
+                            <option value="">Precio: mayor a menor</option>
+                        </select>
+                    </div>
+                    <div class="courses__header__total-courses">
+                        <h4>Mostrando todos los resultados (<%= courses.length %>)</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="courses__list">
+                <% courses.forEach(course => { %>
+                    <%- include('../partials/cardCourse', {
+                        ...course,
+                    }) %>
+                <% }) %>
+                
+            </div>
+            
+        </main>
+        <!-- footer -->
+        <%- include('../partials/footer') %>
+    </body>
+</html>

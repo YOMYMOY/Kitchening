@@ -1,0 +1,58 @@
+[
+   {
+      "id": 1,
+      "name": "Matias",
+      "surname": "Nunez",
+      "email": "matias@gmail.com",
+      "password": "$2a$07$0QXsDuE/HXvBPJrTuQ4DgObNsl632FYxK4NBY29xTLdluzx05/Owu",
+      "rol": "admin"
+   },
+   {
+      "id": 2,
+      "name": "Juan",
+      "surname": "Perez",
+      "email": "juan@gmail.com",
+      "password": "$2a$07$1UcnmcpffoZ/fJhy6gmgxOegg6YTSJEgUeHL5HkMBJnCiVExshUkm",
+      "rol": "user"
+   },
+   {
+      "id": 3,
+      "name": "Marco",
+      "surname": "Polo",
+      "email": "marco@gmail.com",
+      "password": "$2a$07$4TBx/aHZ14Q5vSsxyolpNOLuSX2VmADEgf7hTV.1ZcIHBFlTYvT5C",
+      "rol": "user"
+   },
+   {
+      "id": 4,
+      "name": "Samanta",
+      "surname": "Nuñez",
+      "email": "sam@gmail.com",
+      "password": "$2a$07$NNIqDqpVOPYsUEC794EUMu3LS3sFYtj3AhOl0LPyA5HPaNw5ZAyca",
+      "rol": "user"
+   },
+   {
+      "id": 5,
+      "name": "Julio",
+      "surname": "Nuñez",
+      "email": "julio@gmail.com",
+      "password": "$2a$07$NeHkhPzqlcvcknavv94xTer5KKaeay/XibSkyHqy5Btx1BpC6.UPC",
+      "rol": "user"
+   },
+   {
+      "id": 6,
+      "email": "usuario1@gmail.com",
+      "name": "usuario",
+      "surname": "genérico",
+      "password": "123456",
+      "confirmPassword": "123456"
+   },
+   {
+      "id": 7,
+      "email": "usuario2@gmail.com",
+      "name": "usuarioDos",
+      "surname": "genéricoDos",
+      "password": "$2a$10$0Xj3XTvA69LWD9MLJLBaI.u9v0YKsxeTu3BpsUjMcn98PU0f7FyY6",
+      "confirmPassword": "123456"
+   }
+]

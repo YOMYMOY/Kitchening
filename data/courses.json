@@ -1,0 +1,43 @@
+[
+   {
+      "id": 1,
+      "title": "Pollo al spiedo",
+      "price": 10000,
+      "discount": 0,
+      "description": "Rico",
+      "chef": "Julio Nuñez",
+      "imageChef": null,
+      "section": "newest",
+      "images": [
+         "1677467250634_courses_1F0.png"
+      ]
+   },
+   {
+      "id": 2,
+      "title": "Repostería",
+      "price": 5000,
+      "discount": 0,
+      "description": "Hacer de todo para postres",
+      "chef": "Matias Nuñez",
+      "imageChef": "1677465549960_chefs_010.jpg",
+      "section": "newest",
+      "images": [
+         "1677468017759_courses_1237-600x600.jpg"
+      ]
+   },
+   {
+      "id": 3,
+      "title": "Computacion",
+      "price": 12000,
+      "discount": 0,
+      "description": "Curso 4",
+      "chef": "Samanta Nuñez",
+      "imageChef": "1677988149909_chefs_avatar Sara.jpeg",
+      "section": "newest",
+      "images": [
+         "1677988233576_courses_a real job.gif",
+         "1677988233604_courses_video-games-window-room-retro-games-lamp-computer-165205-wallhere.com.jpg",
+         "1677988233608_courses_Foto-0041.jpg"
+      ]
+   }
+]

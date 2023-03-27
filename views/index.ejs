@@ -1,30 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/stylesheets/styles.css">
-    <script src="https://kit.fontawesome.com/75929d6988.js" crossorigin="anonymous"></script>
-    <title>Kitchening | Home</title>
-</head>
+<%- include('./partials/head') %>
 <body class="home">
-    <header class="header">
-        <img class="header__logo" src="/images/logo.jpg" alt="">
-        <button class="header__hamburger">
-            <i class="fa-solid fa-bars"></i>
-        </button>
-        <nav class="header__nav">
-            <ul class="header__nav--menu">
-                <li><a href="/">home</a></li>
-                <li><a href="/quienes">quienes</a></li>
-                <li><a href="/servicios">servicios</a></li>
-                <li><a href="/portfolio">portfolio</a></li>
-                <li><a href="/sucursales">sucursales</a></li>
-                <li><a href="/contacto">contacto</a></li>
-            </ul>
-        </nav>
-    </header>
+    <%- include('./partials/header') %>
     <main class="home__main">
         <!-- banner -->
         <section class="home__main__section--banner">
@@ -112,17 +90,6 @@
             </article>
         </section>
     </main>
-    <footer class="footer">
-        <nav class="footer__nav">
-            <ul class="footer__nav--menu">
-                <li><a href="/">home</a></li>
-                <li><a href="/quienes">quienes</a></li>
-                <li><a href="/servicios">servicios</a></li>
-                <li><a href="/portfolio">portfolio</a></li>
-                <li><a href="/sucursales">sucursales</a></li>
-                <li><a href="/contacto">contacto</a></li>
-            </ul>
-        </nav>
-    </footer>
+    <%- include('./partials/footer') %>
 </body>
 </html>

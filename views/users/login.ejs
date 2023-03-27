@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- head -->
+<%- include('../partials/head') %>
+<body>
+    <!-- header -->
+    <%- include('../partials/header') %>
+    <main class="main__formSignup">
+        <div class="formSignup">
+            <form action="" class="formSignup__form" method="POST">
+              <h1 class="formSignup__title">Iniciar sesión</h1>
+        
+              <div class="formSignup__inputContainer">
+                <input type="email" class="input" placeholder="a" id="email" name="email" value="<%= locals.old && old.email && !locals.errors.email ? old.email : null %>">
+                <small class="error"><%= locals.errors && errors.email ? errors.email.msg : null %></small>
+                <label for="" class="label">Email</label>                
+              </div>
+        
+              <div class="formSignup__inputContainer">
+                <input type="password" class="input" placeholder="a" id="password" name="password" value="<%= locals.old && old.password && !locals.errors.password ? old.password : null %>">
+                <small class="error"><%= locals.errors && errors.password ? errors.password.msg : null %></small>
+                <label for="" class="label">Contraseña</label>                
+              </div>
+
+              <div>
+                <label for="visible" class="formChef__container__switch">
+                    <input id="visible" type="checkbox" class="formChef__container__switch-input" name="remember">
+                    <span class="formChef__container__switch-track">
+                        <span class="formChef__container__switch-indicator">
+                            <span class="formChef__container__switch-checkMark">
+                                <svg viewBox="0 0 24 24" id="ghq-svg-check" role="presentation" aria-hidden="true">
+                                    <path d="M9.86 18a1 1 0 01-.73-.32l-4.86-5.17a1.001 1.001 0 011.46-1.37l4.12 4.39 8.41-9.2a1 1 0 111.48 1.34l-9.14 10a1 1 0 01-.73.33h-.01z"></path>
+                                </svg>
+                            </span>
+                        </span>
+                    </span>
+                    Recuérdame...
+                </label>
+            </div>
+        
+              <input type="submit" class="submitBtn" value="Iniciar sesión">
+            </form>
+          </div>
+    </main>
+    <!-- footer -->
+    <%- include('../partials/footer') %>
+</body>
+</html>

@@ -1,0 +1,251 @@
+.main__courses {
+    padding: 10px;
+}
+
+.courses__intro {
+
+}
+
+.courses__title {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: var(--colorRojo);
+}
+
+.courses__title div {
+    border-top: 2px solid var(--colorRojo);
+    max-width: 70px;
+    padding: 0;
+    height: 2px;
+    margin: 10px auto 30px;
+}
+
+.courses__btn {
+    margin: 10px auto;
+}
+
+.courses__btn ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.courses__btn li {
+    background-color: var(--colorGris);
+    width: 45%;
+    height: 30px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 -10px 25px rgba(92, 99, 105, .5);
+}
+
+.courses__btn a {
+    line-height: 30px;
+}
+
+.courses__header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.courses__header__order-options {
+    margin: 20px auto;
+    position: relative;
+    display: flex;
+    width: 70%;
+    height: 30px;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.courses__header__order-options::after {
+    content: '\25BC';
+    position: absolute;
+    top: 0px;
+    right: 0;
+    padding: 6px;
+    background: linear-gradient(90deg, rgb(225, 86, 86), var(--colorRojo));
+    transition: .25s all ease;
+    pointer-events: none;
+}
+
+.courses__header__order-options:hover::after {
+    color: #fff;
+}
+
+.courses__header__order-options select {
+    appearance: none;
+    outline: 0;
+    border: 0;
+    box-shadow: none;
+
+    flex: 1;
+    padding: 0 16px;
+    color: #fff;
+    background-image: none;
+    background-color:  rgb(225, 86, 86);
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.courses__header__order-options select::-ms-expand {
+    display: none;
+}
+
+.courses__header__total-courses {
+    width: 100%;
+    margin: 0 auto 30px;
+    text-align: center;
+}
+
+.courses__header__total-courses h4 {
+    font-style: italic;
+    font-size: 14px;
+    color: var(--colorGris);
+}
+
+.courses__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.cardCourse {
+    width: 100%;
+    background-color: #fff;
+    margin-bottom: 30px;
+}
+
+.cardCourse:hover .cardCourse__imgCourse {
+    opacity: .5;
+}
+
+.cardCourse:hover .cardCourse__data--course {
+    color: var(--colorRojo);
+}
+
+.cardCourse__imgCourse img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.cardCourse__imgChef {
+    position: relative;
+}
+
+.cardCourse__imgChef img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.cardCourse__data {
+    margin: 30px auto;
+    text-align: center;
+    color: var(--colorGrisClaro);
+    font-family: 'Kanit', sans-serif;
+    font-weight: 100;
+}
+
+.cardCourse__data--chef {
+
+}
+
+.cardCourse__data--course {
+    margin-top: 10px;
+    color: #000;
+    font-size: 20px;
+}
+
+.cardCourse__data--price {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-style: italic;
+}
+
+.cardCourse__data--price-total {
+    text-decoration: line-through;
+}
+
+.cardCourse__data--price-offer {
+    color: #000;
+}
+
+@media (min-width : 426px) {
+    .courses__btn ul {
+        justify-content: center;
+        gap: 10%;
+    }
+
+    .courses__btn li {
+        width: 30%;
+        height: 40px;
+        line-height: 40px;
+    }
+
+    .courses__header__order-options {
+        width: 30%;
+    }
+
+    .courses__header__total-courses {
+        width: 30%;
+        margin: 0 auto 10px;
+        line-height: 70px;
+    }
+
+    .cardCourse {
+        /* width: 30%; */
+    }
+
+    .courses__list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 10px;
+    }
+}
+
+@media (min-width : 769px) {
+    .courses__btn ul {
+        justify-content: start;
+        gap: 10px;
+    }
+
+    .courses__btn li {
+        width: 15%;
+    }
+
+    .courses__header {
+        justify-content: space-between;
+    }
+
+    .courses__header__order-options {
+        width: 20%;
+        margin: 20px 0;
+    }
+
+    .courses__header__total-courses {
+        width: 30%;
+        margin: 0 0 10px;
+    }
+
+    .cardCourse {
+        /* width: 20%; */
+    }
+
+    .courses__list {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-column-gap: 20px;
+    }
+}

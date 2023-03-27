@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- head -->
+<%- include('../partials/head') %>
+<body>
+    <!-- header -->
+    <%- include('../partials/header') %>
+    <main class="main__formSignup">
+        <div class="formSignup">
+            <form action="" class="formSignup__form" method="POST">
+              <h1 class="formSignup__title">Registrarse</h1>
+        
+              <div class="formSignup__inputContainer">
+                <input type="email" class="input" placeholder="a" id="email" name="email" value="<%= locals.old && old.email && !locals.errors.email ? old.email : null %>">
+                <small class="error"><%= locals.errors && errors.email ? errors.email.msg : null %></small>
+                <label for="" class="label">Email</label>                
+              </div>
+        
+              <div class="formSignup__inputContainer">
+                <input type="text" class="input" placeholder="a" id="name" name="name" value="<%= locals.old && old.name && !locals.errors.name ? old.name : null %>">
+                <small class="error"><%= locals.errors && errors.name ? errors.name.msg : null %></small>
+                <label for="" class="label">Nombre</label>                
+              </div>
+
+              <div class="formSignup__inputContainer">
+                <input type="text" class="input" placeholder="a" id="surname" name="surname" value="<%= locals.old && old.surname && !locals.errors.surname ? old.surname : null %>">
+                <small class="error"><%= locals.errors && errors.surname ? errors.surname.msg : null %></small>
+                <label for="" class="label">Apellido</label>                
+              </div>
+        
+              <div class="formSignup__inputContainer">
+                <input type="password" class="input" placeholder="a" id="password" name="password">
+                <small class="error"><%= locals.errors && errors.password ? errors.password.msg : null %></small>
+                <label for="" class="label">Contraseña</label>                
+              </div>
+        
+              <div class="formSignup__inputContainer">
+                <input type="password" class="input" placeholder="a" id="confirmPassword" name="confirmPassword">
+                <small class="error"><%= locals.errors && errors.confirmPassword ? errors.confirmPassword.msg : null %></small>
+                <label for="" class="label">Confirmar Contraseña</label>                
+              </div>
+        
+              <input type="submit" class="submitBtn" value="Registrarse">
+            </form>
+          </div>
+    </main>
+    <!-- footer -->
+    <%- include('../partials/footer') %>
+</body>
+</html>

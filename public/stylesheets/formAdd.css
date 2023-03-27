@@ -1,0 +1,212 @@
+.main__formChef {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.formChef__container {
+    background-color: #fff;
+    width: 100%;
+    padding: 10px 0;
+    position: relative;
+    display: grid;
+    line-height: 1.5;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.185);
+}
+
+@media (max-width : 426px) {
+    .formChef__form-group label {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.formChef__form-group img {
+    width: 80%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.formChef__form-group__imgs-sec {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 90%;
+    margin: auto;
+}
+
+.formChef__form-group__imgs-sec img {
+    object-fit: contain;
+    display: block;
+    margin: 5px auto;
+}
+
+.formChef__container-text {
+    padding: 10px 20px 10px 10px;
+}
+
+.formChef__container-text h2 {
+    font-size: 1.2rem;
+    color: var(--colorRojo);
+}
+
+.formChef__container-text p {
+    font-size: 14px;
+    color: var(--colorRojo);
+    margin: 10px 0;
+}
+
+.formChef__container-text > input,
+.formChef__container-text button,
+.formChef__container-text textarea,
+.formChef__container-text select,
+.formChef__container-text fieldset {
+    width: 100%;
+    border: none;
+    padding: 8px;
+    border-radius: 3px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.formChef__container-text > input,
+.formChef__container-text textarea,
+.formChef__container-text select,
+.formChef__container-text fieldset {
+    border: 2px solid #DADDEC;
+    margin: 5px 0 10px;
+    font-size: 1rem;
+    color: #656880;
+    resize: none;
+}
+
+.formChef__container-text fieldset {
+    display: flex;
+    justify-content: space-between;
+}
+
+.formChef__container__switch {
+    align-items: center;
+    border-radius: 100px;
+    display: flex;
+    font-weight: 500;
+    margin-bottom: 16px;
+    color: #656880;
+}
+
+.formChef__container__switch-input {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+.formChef__container__switch-input:not([disabled]):active + .formChef__container__switch-track,
+.formChef__container__switch-input:not([disabled]):focus + .formChef__container__switch-track {
+    border: 1px solid transparent;
+    box-shadow: 0px 0px 0px 2px rgb(255, 120, 120);
+}
+
+.formChef__container__switch-track {
+    background: rgb(255, 230, 230);
+	border: 1px solid rgb(255, 80, 80);
+	border-radius: 100px;
+	cursor: pointer;
+	display: flex;
+	height: 30px;
+	margin-right: 12px;
+	position: relative;
+	width: 60px;
+}
+
+.formChef__container__switch-indicator {
+    align-items: center;
+	background: rgb(255, 80, 80);
+	border-radius: 24px;
+	bottom: 2px;
+	display: flex;
+	height: 24px;
+	justify-content: center;
+	left: 2px;
+	outline: solid 2px transparent;
+	position: absolute;
+	transition: 0.25s;
+	width: 24px;
+}
+
+.formChef__container__switch-input:checked + .formChef__container__switch-track .formChef__container__switch-indicator {
+    background: rgb(255, 80, 80);
+	transform: translateX(30px);
+}
+
+.formChef__container__switch-checkMark {
+    fill: #fff;
+	height: 20px;
+	width: 20px;
+	opacity: 0;
+	transition: opacity 0.25s ease-in-out;
+}
+
+.formChef__container__switch-input:checked + .formChef__container__switch-track .formChef__container__switch-checkMark {
+    opacity: 1;
+	transition: opacity 0.25s ease-in-out;
+}
+
+.formChef__container-text button {
+    background-image: linear-gradient(to right, #fe6a6a, #fa4141);
+    display: block;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 5px 20px #ff898994;
+    transition: box-shadow .3s ease-in-out;
+}
+
+.formChef__container-text button:hover {
+    box-shadow: none;
+}
+
+.formChef__container-text > span {
+    display: block;
+    text-align: center;
+    margin: 20px 0 0;
+    color: #BABDCB;
+    font-size: 12px;
+}
+
+.formChef__form-group:hover img{
+    cursor: pointer;
+}
+
+.formChef__form-group>input, .formChef__form-group__imgs-sec>input {
+    display: none;
+}
+
+@media (min-width : 426px) {
+    .formChef__container {
+        width: 80%;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        align-items: start;
+    }
+
+    .formChef__form-group {
+        /* justify-self: center; */
+    }
+
+    .formChef__form-group > label img {
+        display: block;
+        width: 250px;
+        height: 300px;
+        margin: 10px auto;
+    }
+}
+
+@media (min-width : 769px) {
+    .formChef__container {
+        width: 50%;
+    }
+}
