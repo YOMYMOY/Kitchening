@@ -21,26 +21,14 @@ module.exports = {
       password: {
         type: Sequelize.STRING
       },
-      image: {
-        type: Sequelize.STRING
-      },
-      rolId : {
-        type: Sequelize.INTEGER,
-        references : {
-          model : {
-            tableName : "Rols"
-          },
-          key : 'id'
-        }
+      phone: {
+        type: Sequelize.INTEGER
       },
       addressId: {
-        type: Sequelize.INTEGER,
-        references : {
-          model : {
-            tableName : "Adresses"
-          },
-          key : 'id'
-        }
+        type: Sequelize.INTEGER
+      },
+      rolId: {
+        type: Sequelize.INTEGER
       },
       createdAt: {
         allowNull: false,
